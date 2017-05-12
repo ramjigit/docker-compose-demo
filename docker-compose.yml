@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    build: .
+    image: app:1.0.0
+    ports:
+     - "8090:80"
+    volumes:
+     - ./src:/usr/share/nginx/html
